@@ -354,8 +354,16 @@ namespace OxyPlot.Xamarin.Android
                 }
 
                 this.rc.SetTarget(canvas);
-                
-                ((IPlotModel)actualModel).Render(this.rc, Width / Scale, Height / Scale);
+
+                ((IPlotModel)actualModel)
+                    .Render
+                        (
+                            this.rc
+                            ,
+                            //2019-01-09 
+                                new OxyRect(0, 0, 200, 200)
+                        //Width / Scale, Height / Scale
+                        ) ;
             }
         }
 
