@@ -66,7 +66,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-  	<!--
+    <!--
     <PackageReference Include="OxyPlot.Core" Version="2.0.0" />
     <PackageReference Include="NuGet.Build.Packaging">
       <Version>0.2.2</Version>
@@ -93,6 +93,8 @@
     <ProjectReference Include="..\OxyPlot.Xamarin.iOS\OxyPlot.Xamarin.iOS.csproj">
       <Project>{191ABC81-B335-44D7-BE0D-3C5E9196FA8B}</Project>
       <Name>OxyPlot.Xamarin.iOS</Name>
+      <IsAppExtension>false</IsAppExtension>
+      <IsWatchApp>false</IsWatchApp>
     </ProjectReference>
     <ProjectReference Include="..\OxyPlot.Xamarin.Forms\OxyPlot.Xamarin.Forms.csproj">
       <Project>{B63C5F8C-61C8-4E69-93D6-F49F816D3746}</Project>
