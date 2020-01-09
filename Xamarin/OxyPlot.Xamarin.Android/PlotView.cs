@@ -361,8 +361,9 @@ namespace OxyPlot.Xamarin.Android
                             this.rc
                             ,
                             //2019-01-09 
-                                new OxyRect(0, 0, 200, 200)
-                        //Width / Scale, Height / Scale
+                                //new OxyRect(0, 0, 200, 200)
+                                new OxyRect(0, 0, Width/ Scale, Height/ Scale)
+                            //Width / Scale, Height / Scale
                         ) ;
             }
         }

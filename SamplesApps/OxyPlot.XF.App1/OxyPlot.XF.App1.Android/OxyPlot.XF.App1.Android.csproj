@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -88,10 +88,14 @@
     <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Xamarin\OxyPlot.Xamarin.Forms.Platform.Android\OxyPlot.Xamarin.Forms.Platform.Android.csproj">
+      <Project>{60d23ca9-4af6-4179-a3f5-6aebc907337e}</Project>
+      <Name>OxyPlot.Xamarin.Forms.Platform.Android</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OxyPlot.XF.App1\OxyPlot.XF.App1.csproj">
       <Project>{6CEEEB1A-434D-467A-9B9B-6A4F2732DE03}</Project>
       <Name>OxyPlot.XF.App1</Name>
     </ProjectReference>
   </ItemGroup>
- <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

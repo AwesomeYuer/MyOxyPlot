@@ -51,8 +51,9 @@ namespace OxyPlot.XF.App1.UWP
                 rootFrame = new Frame();
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
-
+                //refresh
                 Xamarin.Forms.Forms.Init(e);
+
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
