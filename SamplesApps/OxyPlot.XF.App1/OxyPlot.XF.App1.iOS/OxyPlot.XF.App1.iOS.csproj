@@ -127,6 +127,10 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Xamarin\OxyPlot.Xamarin.Forms.Platform.iOS\OxyPlot.Xamarin.Forms.Platform.iOS.csproj">
+      <Project>{64f4dc0c-2bfe-4c22-b9d1-b04566c2314c}</Project>
+      <Name>OxyPlot.Xamarin.Forms.Platform.iOS</Name>
+    </ProjectReference>
     <ProjectReference Include="..\OxyPlot.XF.App1\OxyPlot.XF.App1.csproj">
       <Project>{6CEEEB1A-434D-467A-9B9B-6A4F2732DE03}</Project>
       <Name>OxyPlot.XF.App1</Name>

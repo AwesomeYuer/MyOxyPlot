@@ -312,8 +312,16 @@ namespace OxyPlot.Xamarin.iOS
                         context.SetFillColor (actualModel.Background.ToCGColor ());
                         context.FillRect (rect);
                     }
+                    //2019-01-09
+                    actualModel.Render
+                            (
+                                renderer
+                                //2019-01-09
+                                , new OxyRect(0, 0, rect.Width, rect.Height)
 
-                    actualModel.Render(renderer, rect.Width, rect.Height);
+                            //, rect.Width
+                            //, rect.Height
+                            ); ;
                 }
             }
         }
